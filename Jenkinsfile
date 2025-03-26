@@ -16,5 +16,10 @@ pipeline {
         echo 'Tarefas para desplegar, construir, ...'
       }
     }
+    stage('Comprobación inicial') {
+      steps {
+        sh "ls"
+      }
+    }
   }
 }
